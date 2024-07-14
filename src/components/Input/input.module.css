@@ -1,0 +1,16 @@
+.input {
+  background-color: var(--gray500);
+  color: var(--gray300);
+  font-size: 1rem;
+  width: 39.875rem;
+  height: 3.375rem;
+  padding: 1rem;
+  border: 1px solid var(--gray500);
+  border-radius: 8px;
+}
+
+.input:focus {
+  border: none;
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple300);
+}
