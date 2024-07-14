@@ -25,10 +25,6 @@
   background-color: var(--blue300);
 }
 
-.button.button[type='submit']:active {
-  background-color: var(--blue600);
-}
-
 .button:disabled {
   cursor: not-allowed;
   opacity: 50%;

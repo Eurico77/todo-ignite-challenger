@@ -3,12 +3,18 @@ import { PlusCircle } from 'lucide-react';
 
 type ButtonProps = {
   onCreateTask: () => void;
+  value?: string;
 };
 
-export default function Button({ onCreateTask }: ButtonProps) {
+export default function Button({ onCreateTask, value }: ButtonProps) {
   return (
     <>
-      <button className={styles.button} type="submit" onClick={onCreateTask}>
+      <button
+        disabled={value?.length === 0}
+        className={styles.button}
+        type="submit"
+        onClick={onCreateTask}
+      >
         Criar
         <span>
           <PlusCircle size={20} />
